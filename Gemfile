@@ -28,13 +28,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Custom Engine for CMS use
-gem 'hamfactory', path: '../hamfactory/'
+# gem 'hamfactory', path: '../hamfactory/'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,3 +52,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Create calendar events
+gem 'google-api-client', '~> 0.17.1'
+
+# Use Refinery CMS for site
+gem 'refinerycms', '~> 4.0.0'
+
+# Test using ri_cal to usse ical url feed.
+gem 'ri_cal', '~> 0.8.8'
+
+# Tether required for Bootstrap tooltips
+gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'

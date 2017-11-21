@@ -11,5 +11,16 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require refinery/formatting
+ *= require refinery/theme
+
+ *= require com_zt_layerslider/captions
+ *= require com_zt_layerslider/settings
+ *= require mod_textscroller/style
+ *= require mod_zt_tabs/default-top
+ *= require mod_zt_tabs/style
+ *= require mod_zt_tabs/tabs
+ *= require zo2/framework/site.styles
+
  *= require_self
  */
